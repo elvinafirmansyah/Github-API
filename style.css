@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+:root {
+  --black: #000000;
+  --white: #fff;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(-300deg,rgba(33,129,205,0.3), rgba(116,239,143,0.3)),url(/img/background.jpg);
+  background-size: cover;
+	min-height: 100vh;
+	background-position: center;
+  flex-direction: column;
+  word-wrap: break-word;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+h2{
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+span {
+  background: linear-gradient(30deg, rgb(27, 121, 145),rgb(90, 219, 252), rgb(180, 252, 222), rgb(181, 255, 138), rgb(170, 210, 255));
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+  background-size: 400%;
+  letter-spacing: 3px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: gradient 15s ease infinite;
+}
+input{
+  padding: 12px 1px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: var(--black);
+  background-color: rgba(255,255,255,0);
+  /* margin-right: 3rem; */
+  font-size: 16px;
+}
+.card-user img{
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 6px;
+  min-width: 140px !important;
+  min-height: 140px !important;
+  box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
+-webkit-box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
+}
+.card-user {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px 40px;
+  max-width: 600px;
+  margin: 0 5rem;
+  border-radius: 7px;
+  color: var(--white);
+}
+.name-bio p{
+  font-size: 17px;
+  color: var(--white);
+  font-weight: 400;
+}
+.name-bio .blog{
+  font-size: 16px;
+  color: #aaf7b2;
+  font-weight: 450;
+}
+.name-bio h2{
+  font-size: 23px;
+  font-weight: 660;
+  color: #e6fded;
+}
+
+.about-card h5{
+  margin-right: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.about-card i{
+  font-size: 14px;
+}
+form{
+  background-color: rgba(255,255,255,0.5);
+  padding: 0.12rem 1rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 0 20px;
+} 
+form i {
+  font-size: 13px;
+}
+form button {
+  background: rgba(21, 102, 89, 0.4);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  color: white;
+}  
+@media (max-width: 600px) {
+  .card-user{
+    flex-direction: column !important;
+    padding: 26px 36px;
+    max-width: 600px;
+    margin: 0 5rem;
+  }
+  .card-user img{
+    min-width: 80px !important;
+    min-height: 80px !important;
+    margin-left: 10px;
+  }
+  input{
+    padding: 10px 2px;
+  }
+  form i{
+    font-size: 13px;
+  }
+  .name-bio p{
+    font-size: 13px;
+  }
+  .name-bio .blog{
+    font-size: 13px;
+  }
+  .name-bio h2{
+    font-size: 17px;
+  }
+  .about-card h5{
+    font-size: 13px;
+  }
+}
+@media (max-width: 316px) {
+  form button{
+    display: none;
+  }
+  form{
+    padding: 0.2rem 0.8rem;
+    max-width: 700px;
+    margin: 0 30px;
+  } 
+  input{
+    font-size: 14.5px;
+  }
+  .card-user{
+    flex-direction: column !important;
+    padding: 15px 18px;
+    max-width: 600px;
+    margin: 0 5rem;
+  }
+}
