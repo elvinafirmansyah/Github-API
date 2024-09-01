@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); 
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
 * {
@@ -13,9 +14,8 @@
   --white: #fff;
 }
 body {
-  font-family: 'Nunito', sans-serif;
-  background-image: linear-gradient(-300deg,rgba(33,129,205,0.3), rgba(116,239,143,0.3)),url(/img/background.jpg);
-  background-size: cover;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #181818;
 	min-height: 100vh;
 	background-position: center;
   flex-direction: column;
@@ -37,7 +37,7 @@ h2{
   color: white;
   font-weight: bold;
   font-size: 50px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 span {
   background: linear-gradient(30deg, rgb(27, 121, 145),rgb(90, 219, 252), rgb(180, 252, 222), rgb(181, 255, 138), rgb(170, 210, 255));
@@ -60,7 +60,7 @@ input{
 }
 .card-user img{
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 30px;
   margin-bottom: 6px;
   min-width: 140px !important;
   min-height: 140px !important;
@@ -69,7 +69,7 @@ input{
 -moz-box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
 }
 .card-user {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.03);
   padding: 20px 40px;
   max-width: 600px;
   margin: 0 5rem;
@@ -101,7 +101,7 @@ input{
   font-size: 14px;
 }
 form{
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,1);
   padding: 0.12rem 1rem;
   border-radius: 8px;
   max-width: 700px;
@@ -111,7 +111,7 @@ form i {
   font-size: 13px;
 }
 form button {
-  background: rgba(21, 102, 89, 0.4);
+  background: rgba(21, 102, 89, 1);
   width: 38px;
   height: 38px;
   border-radius: 50%;

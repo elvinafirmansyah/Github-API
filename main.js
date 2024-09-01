@@ -29,7 +29,7 @@ function createUserCard(user) {
         <div class="col">
           <div class="card-user mt-4 d-flex justify-content-center align-items-center flex-row">
             <img src="${user.avatar_url}" width="140" height="140" class="mt-2" alt="${user.name}"/>
-            <div class="name-bio pt-4">
+            <div class="name-bio pt-4 ">
               <h2>${user.name}<h2>
               <p>${user.bio}</p>
               <a class="blog mb-2" href="${user.blog}" target="_blank">${user.blog}</a>
