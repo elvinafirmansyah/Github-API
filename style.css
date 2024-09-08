@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); 
-@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 * {
   padding: 0;
@@ -12,15 +11,15 @@
 :root {
   --black: #000000;
   --white: #fff;
+  --glass: rgb(255, 255, 255, 0.1);
+  --main: #E85C0D;
 }
 body {
-  font-family: "Space Grotesk", sans-serif;
-  background-color: #181818;
-	min-height: 100vh;
-	background-position: center;
-  flex-direction: column;
-  word-wrap: break-word;
-  animation: gradient 15s ease infinite;
+  font-family: "Inter", sans-serif;
+  background-color: #000e23;
+}
+.bg-glass {
+  background: var(--glass);
 }
 @keyframes gradient {
   0% {
@@ -31,141 +30,5 @@ body {
   }
   100% {
       background-position: 0% 50%;
-  }
-}
-h2{
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  margin-bottom: 0.5rem;
-}
-span {
-  background: linear-gradient(30deg, rgb(27, 121, 145),rgb(90, 219, 252), rgb(180, 252, 222), rgb(181, 255, 138), rgb(170, 210, 255));
-  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-  background-size: 400%;
-  letter-spacing: 3px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: gradient 15s ease infinite;
-}
-input{
-  padding: 12px 1px;
-  border: none;
-  outline: none;
-  border-radius: 8px;
-  color: var(--black);
-  background-color: rgba(255,255,255,0);
-  /* margin-right: 3rem; */
-  font-size: 16px;
-}
-.card-user img{
-  border-radius: 50%;
-  margin-right: 30px;
-  margin-bottom: 6px;
-  min-width: 140px !important;
-  min-height: 140px !important;
-  box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
--webkit-box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
--moz-box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
-}
-.card-user {
-  background: rgba(255, 255, 255, 0.03);
-  padding: 20px 40px;
-  max-width: 600px;
-  margin: 0 5rem;
-  border-radius: 7px;
-  color: var(--white);
-}
-.name-bio p{
-  font-size: 17px;
-  color: var(--white);
-  font-weight: 400;
-}
-.name-bio .blog{
-  font-size: 16px;
-  color: #aaf7b2;
-  font-weight: 450;
-}
-.name-bio h2{
-  font-size: 23px;
-  font-weight: 660;
-  color: #e6fded;
-}
-
-.about-card h5{
-  margin-right: 15px;
-  font-size: 15px;
-  font-weight: 600;
-}
-.about-card i{
-  font-size: 14px;
-}
-form{
-  background-color: rgba(255,255,255,1);
-  padding: 0.12rem 1rem;
-  border-radius: 8px;
-  max-width: 700px;
-  margin: 0 20px;
-} 
-form i {
-  font-size: 13px;
-}
-form button {
-  background: rgba(21, 102, 89, 1);
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  outline: none;
-  border: none;
-  color: white;
-}  
-@media (max-width: 600px) {
-  .card-user{
-    flex-direction: column !important;
-    padding: 26px 36px;
-    max-width: 600px;
-    margin: 0 5rem;
-  }
-  .card-user img{
-    min-width: 80px !important;
-    min-height: 80px !important;
-    margin-left: 10px;
-  }
-  input{
-    padding: 10px 2px;
-  }
-  form i{
-    font-size: 13px;
-  }
-  .name-bio p{
-    font-size: 13px;
-  }
-  .name-bio .blog{
-    font-size: 13px;
-  }
-  .name-bio h2{
-    font-size: 17px;
-  }
-  .about-card h5{
-    font-size: 13px;
-  }
-}
-@media (max-width: 316px) {
-  form button{
-    display: none;
-  }
-  form{
-    padding: 0.2rem 0.8rem;
-    max-width: 700px;
-    margin: 0 30px;
-  } 
-  input{
-    font-size: 14.5px;
-  }
-  .card-user{
-    flex-direction: column !important;
-    padding: 15px 18px;
-    max-width: 600px;
-    margin: 0 5rem;
   }
 }

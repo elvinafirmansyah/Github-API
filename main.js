@@ -25,26 +25,24 @@ async function getRepos(username) {
 
 function createUserCard(user) {
     const cardHTML = `
-      <div class="row">
-        <div class="col">
-          <div class="card-user mt-4 d-flex justify-content-center align-items-center flex-row">
-            <img src="${user.avatar_url}" width="140" height="140" class="mt-2" alt="${user.name}"/>
-            <div class="name-bio pt-4 ">
-              <h2>${user.name}<h2>
-              <p>${user.bio}</p>
-              <a class="blog mb-2" href="${user.blog}" target="_blank">${user.blog}</a>
-              <div class="about-card d-flex flex-row mt-2">
-                <div class="d-flex mr-0">
-
-                  <h5 ><i class="bi bi-person-hearts" style="margin-right: 5px;"></i>${user.followers}</h5>
-                </div>
-                <div class="d-flex  mr-2">
-                  <h5><i class="bi bi-person-check-fill" style="margin-right: 5px;"></i>${user.following}</h5>
-                </div>
-                <div class="d-flex mr-2">
-                  <h5><i class="bi bi-journal-album" style="margin-right: 5px;"></i><a class="text-decoration-none text-white" target="_blank" href="${user.html_url}?tab=repositories">${user.public_repos}</a></h5>
-                </div>
-              </div>
+      <div class="card-user bg-glass p-6 gap-x-5 flex justify-center items-start  rounded-xl mt-4 text-white">
+        <img src=${user.avatar_url} width="100" height="100" class="rounded-full border-4 border-solid border-orange-400" alt="${user.name}"/>
+        <div class="flex flex-col gap-y-1">
+          <h2 class="font-black text-2xl">${user.name}<h2>
+          <p class=${user.bio ? "" : "hidden"}>${user.bio ? user.bio : ""}<h2>
+          <a href=${user.blog} class="underline text-orange-500" target="_blank">${user.blog}</a>
+          <div class="flex justify-between gap-x-3 mt-3">
+            <div class="text-center bg-glass p-4 rounded-xl">
+              <h5 class="text-white font-black text-[25px]">${user.followers}</h5>
+              <p>Followers</p>
+            </div>
+            <div class="text-center bg-glass p-4 rounded-xl">
+              <h5 class="text-white font-black text-[25px]">${user.following}</h5>
+              <p>Following</p>
+            </div>
+            <div class="text-center bg-glass p-4 rounded-xl">
+              <h5 class="text-white text-[25px] font-black text-[25px]"><a class="text-decoration-none" target="_blank" href="${user.html_url}?tab=repositories">${user.public_repos}</a></h5>
+              <p class="">Repos</p>
             </div>
           </div>
         </div>
